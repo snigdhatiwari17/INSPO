@@ -6,16 +6,29 @@
 //
 
 import UIKit
+import FirebaseAuth
+// ...
+      
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logInPressed(_ sender: Any) {
+        if let email = emailTextField.text, let password = passwordTextField.text{
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                guard let strongSelf = self else { return }
+                // ...
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

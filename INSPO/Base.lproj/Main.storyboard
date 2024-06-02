@@ -75,6 +75,9 @@
                                         <rect key="frame" x="0.0" y="96" width="94" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                        <connections>
+                                            <action selector="logInPressed:" destination="DaA-tv-BBc" eventType="touchUpInside" id="Xfq-pP-2PA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -87,6 +90,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BpA-FS-yWM"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="uJQ-ra-lYD" id="Rt4-rT-odu"/>
+                        <outlet property="passwordTextField" destination="GuK-Yc-O5b" id="uoc-Jp-9pQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qj-Ua-I0g" sceneMemberID="firstResponder"/>
             </objects>
