@@ -21,6 +21,7 @@
 		F49630DD2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49630DC2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift */; };
 		F4AB2EBE2C0CC3E700E48C80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */; };
 		F4AB2EC12C0CC4CD00E48C80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4AB2EC02C0CC4CD00E48C80 /* FirebaseAuth */; };
+		F4AB2EC32C0CCB4200E48C80 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB2EC22C0CCB4200E48C80 /* K.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F49630DA2C0CA5E70088ECEF /* INSPOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPOUITests.swift; sourceTree = "<group>"; };
 		F49630DC2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPOUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4AB2EC22C0CCB4200E48C80 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */,
 				F49630B92C0CA5E50088ECEF /* AppDelegate.swift */,
+				F4AB2EC22C0CCB4200E48C80 /* K.swift */,
 				F49630BB2C0CA5E50088ECEF /* SceneDelegate.swift */,
 				F49630BD2C0CA5E50088ECEF /* WelcomeViewController.swift */,
 				F401EB2A2C0CB0F30004D0AB /* LogInViewController.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F401EB2B2C0CB0F30004D0AB /* LogInViewController.swift in Sources */,
+				F4AB2EC32C0CCB4200E48C80 /* K.swift in Sources */,
 				F49630BE2C0CA5E50088ECEF /* WelcomeViewController.swift in Sources */,
 				F49630BA2C0CA5E50088ECEF /* AppDelegate.swift in Sources */,
 				F49630BC2C0CA5E50088ECEF /* SceneDelegate.swift in Sources */,

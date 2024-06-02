@@ -21,10 +21,13 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logInPressed(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text{
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-                guard let strongSelf = self else { return }
-                // ...
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
+                }
             }
         }
     }

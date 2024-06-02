@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ONg-yh-a6C">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -45,21 +45,22 @@
                             <constraint firstItem="pap-O2-JsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCF-i6-CmC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5N8-3E-FTM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="-13"/>
+            <point key="canvasLocation" x="982.44274809160299" y="-13.380281690140846"/>
         </scene>
         <!--LogInViewController-->
         <scene sceneID="GQO-e2-bAg">
             <objects>
                 <viewController title="LogInViewController" id="DaA-tv-BBc" customClass="LogInViewController" customModule="INSPO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="viP-wg-4Mw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="bbk-H8-Qac">
-                                <rect key="frame" x="149.66666666666666" y="356" width="94" height="130.33333333333337"/>
+                                <rect key="frame" x="149.66666666666666" y="361" width="94" height="130.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJQ-ra-lYD">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="34"/>
@@ -93,22 +94,23 @@
                     <connections>
                         <outlet property="emailTextField" destination="uJQ-ra-lYD" id="Rt4-rT-odu"/>
                         <outlet property="passwordTextField" destination="GuK-Yc-O5b" id="uoc-Jp-9pQ"/>
+                        <segue destination="rw1-AA-dO8" kind="show" identifier="LoginToHome" id="RQC-TV-9rj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qj-Ua-I0g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838.93129770992368" y="-13.380281690140846"/>
+            <point key="canvasLocation" x="1765.6488549618321" y="-13.380281690140846"/>
         </scene>
         <!--SignUpViewController-->
         <scene sceneID="BpH-lI-fvW">
             <objects>
                 <viewController title="SignUpViewController" id="Shy-My-ReS" customClass="SignUpViewController" customModule="INSPO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AsS-jl-Qt3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="yRS-yX-GPt">
-                                <rect key="frame" x="149.66666666666666" y="356" width="94" height="130.33333333333337"/>
+                                <rect key="frame" x="149.66666666666666" y="361" width="94" height="130.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhH-LF-bsA">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="34"/>
@@ -142,11 +144,12 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Q4k-T2-quG" id="FzU-cv-b1K"/>
                         <outlet property="usernameTextField" destination="vhH-LF-bsA" id="H6w-wW-952"/>
+                        <segue destination="rw1-AA-dO8" kind="show" identifier="RegisterToHome" id="6PB-Do-w5L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cva-bP-gnZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="732"/>
+            <point key="canvasLocation" x="982" y="785"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="1Ao-xC-0bq">
@@ -175,12 +178,34 @@
                             <constraint firstItem="QFY-8g-M5h" firstAttribute="leading" secondItem="kvD-zv-H9J" secondAttribute="leading" id="v95-3x-MJQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7Ja-5r-xx5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZh-4r-IjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641.9847328244275" y="330.98591549295776"/>
+            <point key="canvasLocation" x="3131" y="452"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Yd-zu-Rt6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ONg-yh-a6C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mX1-3d-3FZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w2r-Ws-qVq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jx1-kS-NQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="-13.380281690140846"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6PB-Do-w5L"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>

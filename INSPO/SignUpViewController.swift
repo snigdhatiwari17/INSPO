@@ -23,7 +23,12 @@ class SignUpViewController: UIViewController {
         
         if let email = usernameTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-              // ...
+                if let e = error {
+                    print(e)
+                } else {
+                    //Navigate to the ChatViewController
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                }
             }
         }
       
