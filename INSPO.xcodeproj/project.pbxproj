@@ -19,6 +19,8 @@
 		F49630D12C0CA5E70088ECEF /* INSPOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49630D02C0CA5E70088ECEF /* INSPOTests.swift */; };
 		F49630DB2C0CA5E70088ECEF /* INSPOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49630DA2C0CA5E70088ECEF /* INSPOUITests.swift */; };
 		F49630DD2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49630DC2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift */; };
+		F4AB2EBE2C0CC3E700E48C80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */; };
+		F4AB2EC12C0CC4CD00E48C80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4AB2EC02C0CC4CD00E48C80 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		F49630D62C0CA5E70088ECEF /* INSPOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INSPOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49630DA2C0CA5E70088ECEF /* INSPOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPOUITests.swift; sourceTree = "<group>"; };
 		F49630DC2C0CA5E70088ECEF /* INSPOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AB2EC12C0CC4CD00E48C80 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +109,7 @@
 		F49630B82C0CA5E50088ECEF /* INSPO */ = {
 			isa = PBXGroup;
 			children = (
+				F4AB2EBD2C0CC3E700E48C80 /* GoogleService-Info.plist */,
 				F49630B92C0CA5E50088ECEF /* AppDelegate.swift */,
 				F49630BB2C0CA5E50088ECEF /* SceneDelegate.swift */,
 				F49630BD2C0CA5E50088ECEF /* WelcomeViewController.swift */,
@@ -152,6 +157,9 @@
 			dependencies = (
 			);
 			name = INSPO;
+			packageProductDependencies = (
+				F4AB2EC02C0CC4CD00E48C80 /* FirebaseAuth */,
+			);
 			productName = INSPO;
 			productReference = F49630B62C0CA5E50088ECEF /* INSPO.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +232,9 @@
 				Base,
 			);
 			mainGroup = F49630AD2C0CA5E50088ECEF;
+			packageReferences = (
+				F4AB2EBF2C0CC4CD00E48C80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F49630B72C0CA5E50088ECEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49630C32C0CA5E70088ECEF /* Assets.xcassets in Resources */,
+				F4AB2EBE2C0CC3E700E48C80 /* GoogleService-Info.plist in Resources */,
 				F49630C62C0CA5E70088ECEF /* Base in Resources */,
 				F49630C12C0CA5E50088ECEF /* Base in Resources */,
 			);
@@ -619,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4AB2EBF2C0CC4CD00E48C80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4AB2EC02C0CC4CD00E48C80 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4AB2EBF2C0CC4CD00E48C80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F49630AE2C0CA5E50088ECEF /* Project object */;
 }

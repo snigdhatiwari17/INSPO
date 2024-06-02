@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +19,15 @@ class SignUpViewController: UIViewController {
     }
     
 
+    @IBAction func signUpPressed(_ sender: Any) {
+        
+        if let email = usernameTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+              // ...
+            }
+        }
+      
+    }
     /*
     // MARK: - Navigation
 

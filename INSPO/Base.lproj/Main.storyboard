@@ -117,6 +117,9 @@
                                         <rect key="frame" x="0.0" y="96" width="94" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpPressed:" destination="Shy-My-ReS" eventType="touchUpInside" id="NI3-ov-Ww3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -129,6 +132,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ciN-NG-0Z2"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Q4k-T2-quG" id="FzU-cv-b1K"/>
+                        <outlet property="usernameTextField" destination="vhH-LF-bsA" id="H6w-wW-952"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cva-bP-gnZ" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +155,7 @@
                                 <items>
                                     <tabBarItem title="home" image="house.fill" catalog="system" id="KnB-Cm-UMA"/>
                                     <tabBarItem title="search" image="magnifyingglass" catalog="system" id="8De-9m-3t0"/>
+                                    <tabBarItem title="add" image="plus.app.fill" catalog="system" id="OIZ-fn-5jL"/>
                                     <tabBarItem title="profile" image="person.fill" catalog="system" id="aXN-FD-WON"/>
                                 </items>
                             </tabBar>
@@ -170,6 +178,7 @@
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
